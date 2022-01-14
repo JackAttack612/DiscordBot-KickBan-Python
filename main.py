@@ -30,7 +30,7 @@ TOKEN=BotConfig.DISCORD_BOT_TOKEN
 @client.event
 async def on_ready():
     print('Bot Logged in. {0.user}\n'.format(client))
-    Print('NOTICE: DO NOT CLOSE THIS WINDOW OR THE BOT WILL GO OFFLINE')
+    print('NOTICE: DO NOT CLOSE THIS WINDOW OR THE BOT WILL GO OFFLINE')
 
 #Logging Channel Actions
 #Creating logging channel file when the bot joins a server
