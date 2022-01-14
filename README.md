@@ -7,7 +7,7 @@
 - Click 'Create'
 - Go to the Bot Page on the left side
 - Click the blue 'add a bot' button and 'yes do it'
-- Enable PRESENCE INTENT, SERVER MEMBERS INTENT, and SERVER MEMBERS INTENT
+- Enable PRESENCE INTENT, SERVER MEMBERS INTENT, and MESSAGE CONTENT INTENT
 - You have now setup your bot! Continue to the next steps to configure and add the bot to your server.
  
 # Basic Setup/Config
