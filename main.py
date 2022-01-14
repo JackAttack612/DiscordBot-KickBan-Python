@@ -24,7 +24,7 @@ client.remove_command("help")
 
 
 #Getting Bot Prefix From Config File
-TOKEN = BotConfig.DISCORD_BOT_TOKEN
+TOKEN=BotConfig.DISCORD_BOT_TOKEN
 
 #Bot startup console message
 @client.event
@@ -89,6 +89,9 @@ async def ban(ctx, member: nextcord.Member, *, reason=None):
     #Banning Member Mentioned
     await member.ban(reason=reason)
 
+    #Confirmation Message
+    await ctx.send(f'User {member.mention} has been banned. Reason: {reason}')
+
     #Sending Logging Message
     f = open(f"Logs/{ctx.guild.id}", 'r')
     if f.mode == 'r':
@@ -102,9 +105,6 @@ async def ban(ctx, member: nextcord.Member, *, reason=None):
     elif f.mode != 'r':
         f.close
         return
-
-    #Confirmation Message
-    await ctx.send(f'User {member.mention} has been banned. Reason: {reason}')
 
 #Ban Errors
 @ban.error
@@ -126,6 +126,9 @@ async def kick(ctx, member: nextcord.Member, *, reason=None):
     #Kicking Member
     await member.kick(reason=reason)
 
+    #Confirmation Message
+    await ctx.send(f'User {member.mention} has been kicked. Reason: {reason}')
+
     #Sending Logging Message
     f = open(f"Logs/{ctx.guild.id}", 'r')
     if f.mode == 'r':
@@ -139,9 +142,6 @@ async def kick(ctx, member: nextcord.Member, *, reason=None):
     elif f.mode != 'r':
         f.close
         return
-
-    #Confirmation Message
-    await ctx.send(f'User {member.mention} has been kicked. Reason: {reason}')
 
 #Kick Errors
 @kick.error
