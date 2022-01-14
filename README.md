@@ -1,2 +1,32 @@
 # DiscordBot-KickBan-Python
+
+# Discord Bot Application Setup
+- Go to https://discord.com/developers/applications
+- In the top right click the blue 'New Application' Button
+- Create a Name for your Application
+- Click 'Create'
+- Go to the Bot Page on the left side
+- Click the blue 'add a bot' button and 'yes do it'
+- Enable PRESENCE INTENT, SERVER MEMBERS INTENT, and SERVER MEMBERS INTENT
+- You have now setup your bot! Continue to the next steps to configure and add the bot to your server.
  
+# Basic Setup/Config
+- Open the BotConfig.py file
+- Change 'BOT_PREFIX_HERE' to your bot token. 
+- How to get the bot token: Head to the application you made at https://discord.com/developers/applications. Go into your application. Click bot on the left side. Under TOKEN click the blue 'copy' button
+- Change 'BOT_PREFIX_HERE' to the prefix you want for the bot
+
+# Instalations (Needed for bot to run properly)
+- Install Python: https://www.python.org/downloads/
+- Install PIP: https://pip.pypa.io/en/stable/installation/
+- Go into your command terminal/prompt
+-
+# Imports on windows (Needed for bot to run properly)
+- type the following: 'py -m pip install nextcord'
+
+# Imports on Mac OS (Needed for bot to run properly)
+- type the following: 'python -m pip install nextcord'
+
+# Running the bot
+- Run the main.py file with python
+- You will have to leave the Command Console Running in order for the bot to stay online
