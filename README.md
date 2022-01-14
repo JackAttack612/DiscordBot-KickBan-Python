@@ -30,3 +30,11 @@
 # Running the bot
 - Run the main.py file with python
 - You will have to leave the Command Console Running in order for the bot to stay online
+
+# Inviting the bot to your server
+- Go back into your discord application at https://discord.com/developers/applications
+- Click the 'OAuth2' button the the left side
+- In the drop down menu below OAuth2 click on 'URL Generator'
+- In the scope box select 'bot'
+- In the bot permissions box select Kick Member and Ban Member or Administrator
+- If you do not give the bot the right permissions it will not be able to kick or ban people!!!
