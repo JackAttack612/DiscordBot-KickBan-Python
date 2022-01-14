@@ -24,7 +24,7 @@ client.remove_command("help")
 
 
 #Getting Bot Prefix From Config File
-TOKEN=BotConfig.DISCORD_BOT_TOKEN
+TOKEN = BotConfig.DISCORD_BOT_TOKEN
 
 #Bot startup console message
 @client.event
