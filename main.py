@@ -1,5 +1,6 @@
 import nextcord
 from nextcord.ext import commands
+import BotConfig
 import json
 import os
 
@@ -14,17 +15,22 @@ def get_log(client, message):
 intents = nextcord.Intents.default()
 intents.members = True
 
+#Getting Prefix From Config File
+BOTPREFIX=BotConfig.BOT_PREFIX
+
 #Prefixes
-client = commands.Bot(command_prefix = "YOUR_PREFIX_HERE", intents=intents)
+client = commands.Bot(command_prefix = BOTPREFIX, intents=intents)
 client.remove_command("help")
 
-#BOT TOKEN
-TOKEN = "DISCORD_BOT_TOKEN_HERE"
+
+#Getting Bot Prefix From Config File
+TOKEN=BotConfig.DISCORD_BOT_TOKEN
 
 #Bot startup console message
 @client.event
 async def on_ready():
     print('Bot Logged in. {0.user}\n'.format(client))
+    Print('NOTICE: DO NOT CLOSE THIS WINDOW OR THE BOT WILL GO OFFLINE')
 
 #Logging Channel Actions
 #Creating logging channel file when the bot joins a server
