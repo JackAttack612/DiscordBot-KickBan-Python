@@ -38,3 +38,4 @@
 - In the scope box select 'bot'
 - In the bot permissions box select Kick Member and Ban Member or Administrator
 - If you do not give the bot the right permissions it will not be able to kick or ban people!!!
+- At the bottom of the page click 'copy' and paste the link into your web browser
