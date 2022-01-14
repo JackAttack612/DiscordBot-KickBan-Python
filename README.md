@@ -11,6 +11,8 @@
 - You have now setup your bot! Continue to the next steps to configure and add the bot to your server.
  
 # Basic Setup/Config
+- Download the latest release
+- Unzip the file in the directory you want
 - Open the BotConfig.py file
 - Change 'BOT_PREFIX_HERE' to your bot token. 
 - How to get the bot token: Head to the application you made at https://discord.com/developers/applications. Go into your application. Click bot on the left side. Under TOKEN click the blue 'copy' button
