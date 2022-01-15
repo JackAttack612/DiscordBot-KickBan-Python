@@ -24,7 +24,7 @@
 
 # Imports on windows (Needed for bot to run properly)
 - Go into your command terminal/prompt
-- type the following: 'py -m pip install nextcord'
+- type the following: 'pip install nextcord'
 
 # Imports on Mac OS (Needed for bot to run properly)
 - Go into your command terminal/prompt
