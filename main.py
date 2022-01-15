@@ -39,14 +39,14 @@ async def on_ready():
 #Creating logging channel file when the bot joins a server
 @client.event
 async def on_guild_join(guild):
-    f = open(f"{directory}/Logs/{guild.id}", 'w+')
+    f = open(f"{directory}\\Logs\\{guild.id}", 'w+')
     f.write("None")
     f.close
 
 #Removing file when bot leaves the server
 @client.event
 async def on_guild_remove(guild):
-    os.remove(f"{directory}/Logs/{guild.id}")
+    os.remove(f"{directory}\\Logs\\{guild.id}")
     print(f"{guild.id} was removed from logs")
 
 #Setting the logging channel command
@@ -69,14 +69,14 @@ async def logchannel(ctx, *, logset=None):
         logset = check2
         print(logset)
 
-    file_exists = os.path.exists(f'{directory}/Logs/{ctx.guild.id}.txt')
+    file_exists = os.path.exists(f'{directory}\\Logs\\{ctx.guild.id}.txt')
     if (file_exists == True):
-        os.remove(f"{directory}/Logs/{ctx.guild.id}")
-        f = open(f"{directory}/Logs/{ctx.guild.id}", "w+")
+        os.remove(f"{directory}\\Logs\\{ctx.guild.id}")
+        f = open(f"{directory}\\Logs\\{ctx.guild.id}", "w+")
         f.write(f"{logset}")
         f.close
     if (file_exists == False):
-        f = open(f"{directory}/Logs/{ctx.guild.id}", "w+")
+        f = open(f"{directory}\\Logs\\{ctx.guild.id}", "w+")
         f.write(f"{logset}")
         f.close
     await ctx.send(f"Logging Channel set to <#{logset}>.")
@@ -96,7 +96,7 @@ async def ban(ctx, member: nextcord.Member, *, reason=None):
     await ctx.send(f'User {member.mention} has been banned. Reason: {reason}')
 
     #Sending Logging Message
-    f = open(f"{directory}/Logs/{ctx.guild.id}", 'r')
+    f = open(f"{directory}\\Logs\\{ctx.guild.id}", 'r')
     if f.mode == 'r':
         logs = await ctx.guild.audit_logs(limit=1, action=nextcord.AuditLogAction.ban).flatten()
         contents = f.read()
@@ -133,7 +133,7 @@ async def kick(ctx, member: nextcord.Member, *, reason=None):
     await ctx.send(f'User {member.mention} has been kicked. Reason: {reason}')
 
     #Sending Logging Message
-    f = open(f"{directory}/Logs/{ctx.guild.id}", 'r')
+    f = open(f"{directory}\\Logs\\{ctx.guild.id}", 'r')
     if f.mode == 'r':
         logs = await ctx.guild.audit_logs(limit=1, action=nextcord.AuditLogAction.ban).flatten()
         contents = f.read()
