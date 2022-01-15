@@ -11,7 +11,7 @@
 - You have now setup your bot! Continue to the next steps to configure and add the bot to your server.
  
 # Basic Setup/Config
-- Download the latest release
+- Download the latest release https://github.com/JackAttack612/DiscordBot-KickBan-Python/releases
 - Unzip the file in the directory you want
 - Open the BotConfig.py file
 - Change 'BOT_PREFIX_HERE' to your bot token. 
