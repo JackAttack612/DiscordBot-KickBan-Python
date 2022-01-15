@@ -22,7 +22,7 @@
 - Install Python: https://www.python.org/downloads/
 - Install PIP: https://pip.pypa.io/en/stable/installation/
 - Go into your command terminal/prompt
--
+
 # Imports on windows (Needed for bot to run properly)
 - type the following: 'py -m pip install nextcord'
 
